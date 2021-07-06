@@ -16,7 +16,6 @@ if (register) {
   }
   if (name.length > 3) {
     nameValidado = name;
-    console.log(`Nombre: ${nameValidado}`);
     let pass = prompt(
       "Ahora ingrese una contraseña, debe tener más de 6 caracteres"
     );
@@ -26,14 +25,12 @@ if (register) {
     }
     if (pass.length > 6) {
       passValidada = pass;
-      console.log(`Contraseña: ${passValidada}`);
-      console.log(`Nombre: ${nameValidado}
-Contraseña: ${passValidada}`);
+      console.log(`${nameValidado}: ${passValidada}`);
       alert(`Bienvenidx ${nameValidado}, te has registrado correctamente!`);
     }
   }
 } else {
-  alert("Ok, esperamos tenerte de regreso pronto!");
+  alert("Ok, esperamos tenerte de regreso");
 }
 
 // -- Login --
@@ -45,7 +42,6 @@ if (passValidada) {
 
 if (sesion) {
   let nameSesion = prompt("Ingrese su nombre de usuario").toLowerCase();
-  console.log(nameSesion);
   while (nameSesion !== nameValidado) {
     alert("El nombre ingresado es incorrecto");
     nameSesion = prompt("Ingrese su nombre de usuario").toLowerCase();
@@ -59,10 +55,8 @@ if (sesion) {
       passSesion = prompt("Ingrese su contraseña");
     }
     if (passSesion === passValidada) {
-      console.log(`Contraseña: ${passSesion}`);
-      console.log(`Nombre: ${nameSesion}
-Contraseña: ${passSesion}`);
-      alert(`Bienvenidx ${nameSesion}, has iniciado sesión correctamente!`);
+      console.log(`${nameSesion}: ${passSesion}`);
+      alert("Has iniciado sesión correctamente!");
     }
   }
 }
