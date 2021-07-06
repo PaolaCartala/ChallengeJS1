@@ -4,9 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto Mono", monospace;
+      }
+    </style>
+    <title>Challenge</title>
   </head>
   <body>
+    <h1>Coding Challenge</h1>
+    <h2>Registro</h2>
+    <p>
+      Vamos a construir un programa que le permita al usuario registrarse en
+      nuestra aplicación. Para ello en primer lugar vamos a mostrar un mensaje
+      que le de la bienvenida al usuario y le pregunte si desea registrarse.
+      <br />En caso de que el usuario acepte registrarse, le vamos a pedir que
+      ingrese su nombre en primer lugar. El nombre de usuario tiene que tener
+      por lo menos 3 caracteres y no va a ser case sensitive, por lo que lo
+      vamos a almacenar en minúsculas, independientemente de lo que ingrese el
+      usuario. <br />
+      Agregar la validación necesaria para que si no se cumple la condición
+      salga un mensaje de error.
+    </p>
+    <p>
+      Si el nombre de usuario es ingresado correctamente, le vamos a pedir que
+      ingrese una contraseña, la cual tiene que tener por lo menos 6 caracteres.
+      La contraseña va a ser case sensitive, por lo que se respetarán las
+      minúsculas y mayúsculas que el usuario ingrese. En caso de que la
+      contraseña no cumpla los requisitos deberá emitir un mensaje de error. De
+      lo contrario, deberá mostrar un mensaje de éxito informando al usuario que
+      el registro está completo.
+    </p>
+
+    <h2>Login</h2>
+    <p>
+      Partiendo desde el punto anterior, en caso de que el registro esté
+      completo, le vamos a preguntar al usuario si quiere iniciar sesión. En
+      caso de que el usuario acepte, vamos a pedirle que ingrese su nombre y
+      contraseña. Si los datos son incorrectos, le mostraremos un mensaje de
+      error, sino mostraremos un mensaje de éxito.
+    </p>
+
+    <h2>Extra</h2>
+    <p>
+      Tomando los ejericios anteriores, los vamos a modificar para que en el
+      caso de que cualquiera de las validaciones anteriores arroje un error,
+      volvamos a pedirle al usuario la información solicitada en ese punto.
+      Tener en cuenta también que el usuario debe poder terminar el programa en
+      cualquier punto en el que se le pide ingresar un dato.
+    </p>
     <script src="challenge.js"></script>
   </body>
 </html>

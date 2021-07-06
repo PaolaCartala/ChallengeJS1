@@ -30,14 +30,10 @@ if (register) {
       console.log(`Nombre: ${nameValidado}
 Contraseña: ${passValidada}`);
       alert(`Bienvenidx ${nameValidado}, te has registrado correctamente!`);
-    } else {
-      alert("Ingrese una contraseña válida (con más de 6 caracteres)");
     }
-  } else {
-    alert("Ingrese un nombre válido (con más de 3 caracteres)");
   }
 } else {
-  alert("Para continuar debes registrarte");
+  alert("Ok, esperamos tenerte de regreso pronto!");
 }
 
 // -- Login --
